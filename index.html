@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal - Madeline León</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px;
+            background-color: #FFF0F5; 
+            color: #333333;
+        }
+
+        /* Encabezado */
+        .encabezado { 
+            background: #FF69B4; 
+            color: white; 
+            padding: 25px; 
+            text-align: center; 
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .encabezado h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .encabezado p {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        /* Menú de navegación */
+        .menu { 
+            background: #C71585; 
+            color: white; 
+            padding: 15px; 
+            text-align: center;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #FFB6C1;
+        }
+
+        /* Contenedor principal de dos columnas */
+        .contenido { 
+            display: flex; 
+            gap: 15px; 
+            margin-top: 15px; 
+            align-items: flex-start;
+        }
+
+        /* Columna Izquierda: Biografía y Cualidades */
+        .principal { 
+            background: #FFE4E1; 
+            padding: 25px; 
+            flex: 2; 
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .principal h2 {
+            color: #C71585;
+            margin-top: 0;
+        }
+
+        .principal p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        .cualidades-lista {
+            background-color: #ffffff;
+            padding: 15px 25px;
+            border-radius: 8px;
+            border-left: 4px solid #FF69B4;
+        }
+
+        /* Columna Derecha: Fotos, Música y Video */
+        .lateral { 
+            background: #FFF0F5; 
+            padding: 25px; 
+            flex: 1; 
+            border-radius: 8px;
+            border: 2px solid #FFB6C1;
+        }
+
+        .lateral h2 {
+            color: #C71585;
+            margin-top: 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .reproductor-box {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        audio, video, img {
+            width: 100%;
+            margin-top: 10px;
+            border-radius: 6px;
+        }
+
+        /* Pie de página y Redes Sociales */
+        .pie { 
+            background: #C71585; 
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+            margin-top: 15px; 
+            border-radius: 8px;
+            clear: both;
+        }
+
+        .redes-sociales {
+            margin-bottom: 10px;
+        }
+
+        .redes-sociales a {
+            color: #FFE4E1;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .redes-sociales a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Adaptabilidad para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .contenido {
+                flex-direction: column;
+            }
+            .principal, .lateral {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- div.encabezado -->
+    <div class="encabezado">
+        <h1>MADELINE ANAIS LEON FAJARDO</h1>
+        <p>Bienvenidos a mi página web personal</p>
+    </div>
+
+    <!-- div.menu -->
+    <div class="menu">
+        <a href="#biografia">Biografía</a> | 
+        <a href="#fotos">Fotos</a> | 
+        <a href="#musica">Música</a> | 
+        <a href="#video">Video</a> | 
+        <a href="#redes">Contacto</a>
+    </div>
+
+    <!-- div.contenido (Agrupa principal y lateral) -->
+    <div class="contenido">
+        
+        <!-- div.principal -->
+        <div class="principal" id="biografia">
+            <h2>Biografía</h2>
+            <p>
+                Mi nombre es <strong>Madeline Anais León Fajardo</strong>, tengo 23 años, nací y vivo en el cantón Ventanas, donde tuve una infancia muy bonita y alegre, llena de buenos recuerdos. Mi familia es mi mayor apoyo y motivación. Actualmente, estudio en la Universidad Técnica de Babahoyo, en la carrera de Sistemas de Información, y curso el tercer semestre.
+            </p>
+            <p>
+                Me gusta mucho la música, especialmente la bachata y la salsa. También disfruto practicar deportes, ver series y escuchar música en mis tiempos libres. Me encantan los animales, especialmente los gatos y los perros. Mi principal meta es terminar mi carrera universitaria, convertirme en una buena profesional y cumplir todos mis sueños y objetivos, esforzándome cada día para construir un buen futuro.
+            </p>
+
+            <h2>Mis Cualidades</h2>
+            <div class="cualidades-lista">
+                <ul>
+                    <li><strong>Perseverante:</strong> Siempre busco cumplir mis metas académicas y personales.</li>
+                    <li><strong>Creativa:</strong> Me gusta darle un toque personal y ordenado a cada proyecto que realizo.</li>
+                    <li><strong>Responsable:</strong> Dedicada y comprometida con mis estudios en sistemas.</li>
+                    <li><strong>Trabajo en equipo:</strong> Capacidad para colaborativamente compartir ideas y soluciones.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- div.lateral -->
+        <div class="lateral">
+            
+            <h2 id="fotos">Mi Foto</h2>
+            <div class="reproductor-box">
+                <img src="mi-foto.jpeg" alt="Foto personal de Madeline">
+            </div>
+
+             <h2 id="musica">Mi Música Favorita</h2>
+<div class="reproductor-box">
+    <p>Un tema especial para acompañar este espacio: <strong>Fabricando Fantasías - Tito Nieves</strong></p>
+    <audio controls>
+        <source src="cancion.mp3" type="audio/mpeg">
+        Tu navegador no soporta el reproductor de audio.
+    </audio>
+</div>
+
+            <h2 id="video">Mi Video</h2>
+            <div class="reproductor-box">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Tu navegador no soporta el reproductor de video.
+                </video>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- div.pie -->
+    <div class="pie" id="redes">
+        <h3>Redes Sociales</h3>
+        <div class="redes-sociales">
+            <a href="https://facebook.com" target="_blank">Facebook: Maddy Leon</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram: Maddy Leon</a> | 
+            <a href="https://tiktok.com" target="_blank">TikTok: Maddy Leon</a>
+        </div>
+        <p>&copy; 2026 - Madeline Anais León Fajardo</p>
+    </div>
+
+</body>
+</html>
